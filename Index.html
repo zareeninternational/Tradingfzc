@@ -1,78 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Zareen International Trading FZC</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zareen International Trading FZC – Building Materials & Industrial Products Supplier in Dubai, UAE">
+  <meta name="description"
+        content="Zareen International Trading FZC – Building Materials, HVAC, Lubricants & Import Export Company in UAE">
+
+  <!-- SEO -->
+  <meta name="keywords"
+        content="Zareen International Trading FZC, Building Materials UAE, HVAC Trading Dubai, Import Export UAE">
+  <meta name="author" content="Zareen International Trading FZC">
+  <meta name="geo.region" content="AE">
+  <meta name="geo.placename" content="Ajman, United Arab Emirates">
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0e0e0e;
-      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f2f46;
+      color: #ffffff;
       scroll-behavior: smooth;
     }
 
+    /* HEADER */
     header {
-      background: #000;
-      padding: 15px 20px;
-      position: sticky;
-      top: 0;
+      background: #071e2e;
+      padding: 15px 25px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
       z-index: 1000;
     }
 
     header h1 {
       font-size: 18px;
-      color: #d4af37;
       margin: 0;
+      font-weight: bold;
     }
 
     nav a {
       margin-left: 15px;
-      color: #d4af37;
       text-decoration: none;
+      color: #ffffff;
       font-size: 14px;
     }
 
-    section {
-      padding: 70px 20px;
+    nav a:hover {
+      text-decoration: underline;
     }
 
-    .hero {
-      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-      url("https://images.unsplash.com/photo-1581092334513-d1c3c4f95f50");
-      background-size: cover;
-      background-position: center;
+    /* SECTIONS */
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 26px;
+      margin-bottom: 20px;
       text-align: center;
     }
 
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                  url("assets/css/hero.jpg") center/cover no-repeat;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
     .hero h2 {
-      font-size: 32px;
-      color: #d4af37;
+      font-size: 34px;
+      margin-bottom: 10px;
     }
 
     .hero p {
       max-width: 700px;
       margin: auto;
       font-size: 16px;
+      line-height: 1.6;
     }
 
     .btn {
-      margin-top: 20px;
       display: inline-block;
-      padding: 12px 25px;
-      background: #d4af37;
-      color: #000;
-      text-decoration: none;
-      border-radius: 5px;
+      margin-top: 25px;
+      padding: 12px 28px;
+      background: #ffffff;
+      color: #0f2f46;
       font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
     }
 
+    /* ACTIVITIES */
+    .activities-list {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .activities-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      font-size: 15px;
+    }
+
+    /* PRODUCTS */
     .products {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -80,61 +119,63 @@
     }
 
     .product {
-      background: #111;
-      padding: 20px;
-      border-radius: 8px;
+      background: #071e2e;
+      border-radius: 10px;
+      padding: 15px;
       text-align: center;
     }
 
     .product img {
       width: 100%;
-      border-radius: 6px;
-      opacity: 0.9;
+      border-radius: 8px;
+      height: 160px;
+      object-fit: cover;
     }
 
     .product h3 {
-      color: #d4af37;
+      margin-top: 12px;
+      font-size: 16px;
     }
 
-    .contact-form {
-      max-width: 500px;
+    /* ABOUT */
+    .about-text {
+      max-width: 850px;
       margin: auto;
+      line-height: 1.7;
+      text-align: center;
+      font-size: 15px;
     }
 
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 12px;
-      border-radius: 4px;
-      border: none;
+    /* CONTACT */
+    .contact-box {
+      max-width: 700px;
+      margin: auto;
+      text-align: left;
+      line-height: 1.7;
+      font-size: 15px;
     }
 
-    button {
-      width: 100%;
-      padding: 12px;
-      background: #d4af37;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
+    /* FOOTER */
     footer {
-      background: #000;
+      background: #071e2e;
       text-align: center;
       padding: 20px;
-      color: #aaa;
+      font-size: 14px;
+      opacity: 0.85;
     }
 
+    /* WHATSAPP */
     .whatsapp {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #25D366;
-      color: #fff;
-      padding: 14px;
-      border-radius: 50%;
-      font-size: 22px;
+      background: #25d366;
+      color: #ffffff;
+      padding: 14px 18px;
+      border-radius: 50px;
       text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -142,9 +183,10 @@
 <body>
 
 <header>
-  <h1>Zareen International</h1>
+  <h1>Zareen International Trading FZC</h1>
   <nav>
     <a href="#home">Home</a>
+    <a href="#activities">Activities</a>
     <a href="#products">Products</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
@@ -153,64 +195,102 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <h2>Zareen International Trading FZC</h2>
-  <p>Premium Building Materials & Industrial Product Supplier – Dubai, UAE</p>
-  <a href="#products" class="btn">Explore Products</a>
+  <h2>Global Trading Solutions from the UAE</h2>
+  <p>
+    Zareen International Trading FZC is a trusted supplier of building materials,
+    HVAC systems, lubricants, and multi-sector trading services across the UAE
+    and international markets.
+  </p>
+  <a href="#contact" class="btn">Contact Us</a>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities">
+  <h2 class="section-title">Our Activities</h2>
+  <ul class="activities-list">
+    <li>Building & Construction Materials Trading (Import & Export)</li>
+    <li>Wholesale of Unit Air Conditioner Trading</li>
+    <li>Wholesale of Grease & Lubricants Trading</li>
+    <li>Wholesale of Fresh Foodstuff Trading (Import & Export)</li>
+    <li>Perfumes & Cosmetics Trading (Import & Export)</li>
+    <li>Ready-Made Garments Trading (Import & Export)</li>
+    <li>E-Commerce</li>
+    <li>Computer Consultancy</li>
+    <li>Computer Facilities Management Activities</li>
+  </ul>
 </section>
 
 <!-- PRODUCTS -->
 <section id="products">
-  <h2 style="text-align:center;color:#d4af37;">Our Products</h2>
+  <h2 class="section-title">Our Product Range</h2>
 
   <div class="products">
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1621905251189-08b468ed3b06" alt="">
-      <h3>Air Conditioning Products</h3>
+      <img src="assets/css/construction.jpg">
+      <h3>Construction Materials</h3>
     </div>
 
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1586864387789-628af9feed72" alt="">
+      <img src="assets/css/ac.jpg">
+      <h3>Air Conditioning Units</h3>
+    </div>
+
+    <div class="product">
+      <img src="assets/css/lubricants.jpg">
       <h3>Industrial Lubricants</h3>
     </div>
 
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1600352706622-cb7ebdb0f7c8" alt="">
-      <h3>Building Materials</h3>
+      <img src="assets/css/plywood.jpg">
+      <h3>Plywood & Boards</h3>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-  <h2 style="color:#d4af37;">About Us</h2>
-  <p>
-    Zareen International Trading FZC is a Dubai-based trading company supplying
-    high-quality industrial, HVAC, and construction materials across the UAE.
-    We focus on reliability, competitive pricing, and long-term business relationships.
+  <h2 class="section-title">About Us</h2>
+  <p class="about-text">
+    Zareen International Trading FZC is a UAE registered company located in
+    Ajman Free Zone. We specialize in wholesale trading, import & export,
+    HVAC solutions, construction materials, lubricants, and multi-category trading.
+    Our goal is to build long-term partnerships by delivering quality products,
+    competitive pricing, and reliable logistics solutions.
   </p>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <h2 style="color:#d4af37;">Contact Us</h2>
+  <h2 class="section-title">Contact Us</h2>
 
-  <form class="contact-form" action="https://formsubmit.co/terasynctech@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message"></textarea>
+  <div class="contact-box">
+    <p><strong>CEO:</strong> Humair Akram</p>
+    <p><strong>Phone:</strong><br>
+      +971 52 338 8786<br>
+      +971 52 205 6200
+    </p>
 
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_subject" value="New Enquiry - Zareen International">
+    <p><strong>Email:</strong><br>
+      zareeninternationaltrading@gmail.com
+    </p>
 
-    <button type="submit">Send Message</button>
-  </form>
+    <p><strong>Office Address:</strong><br>
+      Office – C1 – 1F – SF14106,<br>
+      Ajman Free Zone,<br>
+      Ajman – United Arab Emirates
+    </p>
+  </div>
 </section>
 
 <footer>
-  © 2025 Zareen International Trading FZC — Dubai, UAE
+  © 2025 Zareen International Trading FZC – All Rights Reserved
 </footer>
 
-<a class="whatsapp" href="https://wa.me/971XXXXXXXXX" target="_blank">💬</a>
+<a class="whatsapp"
+   href="https://wa.me/971523388786"
+   target="_blank">
+   WhatsApp
+</a>
 
 </body>
 </html>
